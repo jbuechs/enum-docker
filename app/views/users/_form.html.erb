@@ -1,0 +1,8 @@
+<%= simple_form_for(@user) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :gender, collection: User.create_gender_collection %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

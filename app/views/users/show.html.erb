@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Name: <%=@user.name %></h1>
+<h2>Gender: <%= User.human_attribute_name("gender.#{@user.gender}") %></h2>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
